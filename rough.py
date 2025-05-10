@@ -15,7 +15,45 @@ b ="y"
 
 print(a+b) """
 
+ 
+#from oops_proj import chatbook
+"""
+obj = chatbook() """
+""" # function vs method belows
+
+lst =[1,2,3]
+
+#function0
+
+a1=len(lst)
+print(a1)
+
+# method  """
+""" from oops_proj import chatbook
+user1 = chatbook()
+print(user1._chatbook__name) """
+
+""" from oops_proj import chatbook
+user1 = chatbook()
+print(user1.id)
+
+user2 = chatbook()
+print(user2.id)
+
+user3 = chatbook()
+print(user3.id)
+ """
+# getter and setter 
+""" print(user1.get_name())
+user1.set_name("mohit bele")
+print(user1.get_name()) """
+
 
 from oops_proj import chatbook
+user1 = chatbook()
+print(user1.id)
 
-obj = chatbook()
+chatbook.set_id(10)
+
+user2 = chatbook()
+print(user2.id)
