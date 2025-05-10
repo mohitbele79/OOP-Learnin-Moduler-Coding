@@ -76,3 +76,4 @@ class chatbook:
 
 
 odj = chatbook()
+# WE CALL PROGRAM IN SAME FILE
