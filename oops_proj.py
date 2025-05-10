@@ -1,7 +1,7 @@
 class chatbook:
     def __init__(self):
         self.username = ""
-        self.password = ''
+        self.pwd = ''
         self.logging = False
         self.menu()
 
@@ -14,9 +14,9 @@ class chatbook:
                             4. Press 4 to message a friend 
                             5. press any other key to Exit""") 
          if user_input =="1":
-            pass
+            self.signup()
          elif user_input == "2":
-            pass
+            self.signin()
          elif user_input == "3":
              pass
          elif user_input == "4":
@@ -26,5 +26,35 @@ class chatbook:
 
 
 
-         
+
+    def signup(self):
+        email = input('Enter your email here -- >')
+        password = input('setup your password here -- >')
+        self.username = email
+        self.password= password
+        print('you have signed up successfully ')
+        print("\n")
+        self.menu()
+
+
+    def signin(self):
+
+        if self.username == " " and self.password=="":
+            print("Please signup first by pressing 1 in the main menu")
+        else:
+            uname = input('Enter your email here -- >')
+            pwd = input('setup your password here -- >')
+            if self.username==uname and self.password==pwd:
+                print("you have signed in successfully !!")
+                self.logging=True
+            else:
+                print("Please input correct credential..")  
+
+        print("\n")
+        self.menu()          
+
+
+
+
+
 odj = chatbook()
